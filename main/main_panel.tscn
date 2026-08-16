@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://nlbg8q6ucpg5"]
+
+[ext_resource type="Script" uid="uid://cdce0gsgqv26y" path="res://main/main_panel.gd" id="1_lxmim"]
+[ext_resource type="Texture2D" uid="uid://b453pucjdtvui" path="res://assets/panels/apeirophobia_base.png" id="2_a6tvk"]
+[ext_resource type="Texture2D" uid="uid://mylqavh6amel" path="res://assets/panels/Group 15.PNG" id="3_q4dnv"]
+[ext_resource type="Texture2D" uid="uid://b3p6wghbki7cs" path="res://assets/panels/Group 15b.PNG" id="4_hihyh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mi0vw"]
+texture = ExtResource("2_a6tvk")
+
+[node name="MainPanel" type="Control" unique_id=1440435402]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lxmim")
+
+[node name="Panel" type="Panel" parent="." unique_id=1253216031]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_mi0vw")
+metadata/_edit_lock_ = true
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=321852115]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 507.0
+offset_bottom = 268.0
+texture_normal = ExtResource("3_q4dnv")
+texture_pressed = ExtResource("4_hihyh")
+texture_hover = ExtResource("4_hihyh")

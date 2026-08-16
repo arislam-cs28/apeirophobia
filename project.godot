@@ -12,6 +12,7 @@ config_version=5
 
 config/name="apeirophobia"
 config/tags=PackedStringArray("fantasy", "fun", "hack_club")
+run/main_scene="uid://btel1ba6ojisk"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 

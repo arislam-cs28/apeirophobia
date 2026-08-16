@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://btel1ba6ojisk"]
+
+[ext_resource type="Script" uid="uid://uctsra8p5bty" path="res://cover/coverpage.gd" id="1_kdvu1"]
+
+[node name="CoverPage" type="Control" unique_id=1208663453]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kdvu1")
+
+[node name="Background" type="Panel" parent="." unique_id=2171387]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Read" type="Button" parent="." unique_id=1211379434]
+layout_mode = 0
+offset_left = 632.0
+offset_top = 1072.0
+offset_right = 896.0
+offset_bottom = 1191.0
+text = "Start Reading"
+
+[connection signal="pressed" from="Read" to="." method="_on_read_pressed"]
